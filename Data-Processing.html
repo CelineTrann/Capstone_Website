@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Correction Algorithm Design</title>
+  <title>Data Processing</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="index.html#portfolio">Design</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Design</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
@@ -70,9 +70,9 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Correction Algorithm Design</li>
+          <li>Data Processing</li>
         </ol>
-        <h2>Correction Algorithm Design</h2>
+        <h2>Data Processing</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -88,15 +88,11 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets\img\software-assets\control-flowchart.png" alt="">
+                  <img src="assets\img\software-assets\filter-label.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets\img\software-assets\control-flowchart-left.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets\img\software-assets\control-flowchart-right.png" alt="">
+                  <img src="assets\img\software-assets\readings.png" alt="">
                 </div>
 
               </div>
@@ -109,17 +105,17 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Software</li>
-                <li><strong>Created By</strong>: Celine, Maisha</li>
-                <li><strong>Created On</strong>: 01 November, 2022</li>
+                <li><strong>Created By</strong>: Celine</li>
+                <li><strong>Created On</strong>: 14 November, 2022</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Control Algorithm</h2>
+              <h2>Data Processing</h2>
               <p>
-                This will be the flow of the algorithm run on the microprocessor. After the user chooses the pose they want to do, the correction algorithm will run unitl the time to complete the pose is done. 
+                A Raspberry Pi will be used to query the intersections of the copper tape from the sensor mat. This data will be in the form of integer values that will be stored in a two dimensional numpy array. This structure allows the data that has been read to keep its relative location as well as shape intact for processing.
               </p>
               <p>
-                The algorithm will look at the sensor data to determine the relative position of the foot as well as the pressure placed on each limb. From there, it will compare it to the ideal position and pressure, then give corrections to the user if necessary. 
+                A blur will then be applied on this data set to combine similar shapes to be one object. For example, it would merge fingers with the palm. Then a filter will be applied to filter out low level noise and isolate the pressure regions. The regions will then be labelled and categorized into three categories based on the length, width, and area of its bounding box. The three categories are hand, foot, and other.
               </p>
             </div>
           </div>
