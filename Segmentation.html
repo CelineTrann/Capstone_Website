@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Correction Algorithm Design</title>
+  <title>Segmentation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="index.html#portfolio">Design</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Design</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
@@ -70,9 +70,9 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Correction Algorithm Design</li>
+          <li>Segmentation</li>
         </ol>
-        <h2>Correction Algorithm Design</h2>
+        <h2>Segmentation</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -88,15 +88,11 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets\img\software-assets\control-flowchart.png" alt="">
+                  <img src="assets\img\software-assets\foot-seg.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets\img\software-assets\control-flowchart-left.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets\img\software-assets\control-flowchart-right.png" alt="">
+                  <img src="assets\img\software-assets\hand-seg.png" alt="">
                 </div>
 
               </div>
@@ -109,17 +105,17 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Software</li>
-                <li><strong>Created By</strong>: Celine, Maisha</li>
-                <li><strong>Created On</strong>: 01 November, 2022</li>
+                <li><strong>Created By</strong>: Celine</li>
+                <li><strong>Created On</strong>: 14 November, 2022</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Control Algorithm</h2>
+              <h2>Segmentation</h2>
               <p>
-                This will be the flow of the algorithm run on the microprocessor. After the user chooses the pose they want to do, the correction algorithm will run unitl the time to complete the pose is done. 
+                The pressure data collected from the users hands and feet need to be segmented to allow for processing. As it is impossible to determine the correct pressure for a specific point, the limbs will be sectioned into regions. The average pressure applied in these region will be compared to an ideal value. This will simplify the comparison process.
               </p>
               <p>
-                The algorithm will look at the sensor data to determine the relative position of the foot as well as the pressure placed on each limb. From there, it will compare it to the ideal position and pressure, then give corrections to the user if necessary. 
+                The regions of the hand and feet can be seen in the image. These regions are based on the respective anatomical regions, as well as the weigth distribution of the hand and feet. Some regions were re-divide with consideration to the resolution of the data.
               </p>
             </div>
           </div>
