@@ -959,6 +959,13 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
